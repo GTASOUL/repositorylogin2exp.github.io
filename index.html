@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Comic Sans MS;
+  font-size: 17.8px;
+ font-weight:100
+}
+
+ body {
+        margin: 0;
+        padding: 0;
+        font-family: Comic Sans MS;
+        font-size: 17.8px;
+        font-weight:100
+        background-color: #f5f5f5;
+      }
+      
+    
+      .login-box {
+        width: 320px;
+        height: 400px;
+        background: #ffffff;
+        color: #000000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 28px;
+      }
+
+      .login-box p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      .login-box input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #000000;
+        background-color: transparent;
+        outline: none;
+        height: 40px;
+        color: #000000;
+        font-size: 16px;
+      }
+
+      .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #fb2525;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 20px;
+      }
+
+      .login-box input[type="submit"]:hover {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000000;
+      }
+
+      .login-box a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #000000;
+      }
+
+      .login-box a:hover {
+        color: #ffc107;
+      }
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="C:\Users\ADMIN\Downloads\Video\blue.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="text-overlay">
+  <h1></h1>
+  <p>Additional text can be added here as well.</p>
+</div>
+
+  <div class="login-box">
+      
+      <img src="C:\Users\ADMIN\Pictures\Saved Pictures\catty.jpg" class="avatar" alt="avatar">
+      <h1>Login Here</h1>
+      <form>
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="submit" name="submit" value="Login">
+        <a href="#">Forgot Password</a>
+      </form>
+    </div>
+
+
+
+</body>
+</html>
